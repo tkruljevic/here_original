@@ -3,6 +3,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/camera_view_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="tamara.myappcompany.here.CameraActivity">
@@ -16,12 +17,13 @@
         android:paddingTop="100dp"
         android:paddingBottom="100dp">
 
-        <include layout="@layout/menu_bakdrop" />
+        <include layout="@layout/menu_backdrop" />
 
     </LinearLayout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/border_bottom"

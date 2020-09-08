@@ -8,9 +8,11 @@
 
     <TextView
         android:id="@+id/dlg_title"
+        android:textAppearance="@style/TextAppearance.Here.Title"
         android:layout_gravity="center"
         android:textSize="20sp"
         tools:text="The dialog title"
+        android:layout_marginBottom="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -25,8 +27,18 @@
         />
 
     <EditText
+        android:textColor="@color/colorPrimaryDark"
         android:layout_gravity="center"
         android:id="@+id/dlg_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:hint="The dialog hint"
+        />
+
+    <EditText
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/dlg_input2"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:hint="The dialog hint"

@@ -42,6 +42,7 @@ import androidx.appcompat.widget.Toolbar;
 
 
 import android.util.Size;
+import android.view.Menu;
 import android.view.Surface;
 import android.view.View;
 import android.view.WindowManager;
@@ -49,6 +50,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.nio.ByteBuffer;
@@ -109,7 +111,27 @@ public abstract class CameraActivity extends AppCompatActivity
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayShowTitleEnabled(true);
 
-    toolbar.inflateMenu(org.tensorflow.lite.examples.detection.R.menu.toolbar_menu);
+      //navigate to class1
+      MaterialButton course1button = (MaterialButton) findViewById(R.id.course1_button);
+
+      course1button.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view_C1) {
+              navCourse1();
+          }
+      });
+
+      //navigate to settings
+      MaterialButton settingsbutton = (MaterialButton) findViewById(R.id.settings_button);
+
+      settingsbutton.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view_set) {
+              navSettings();
+          }
+      });
+
+    //toolbar.inflateMenu(org.tensorflow.lite.examples.detection.R.menu.toolbar_menu);
 
 
     toolbar.setNavigationOnClickListener(new NavigationIconClickListener(
@@ -135,6 +157,30 @@ public abstract class CameraActivity extends AppCompatActivity
     });
 
   }
+
+
+    @Override
+    public boolean onCreateOptionsMenu( Menu menu )
+    {
+        getMenuInflater().inflate( R.menu.toolbar_menu, menu );
+        return true;
+    }
+
+    private void navCourse1(){
+        Intent course1_button = new Intent(CameraActivity.this, CoursesGridFragment.class);
+        startActivity(course1_button); // brings up the next activity
+    }
+
+
+    private void navSettings(){
+        Intent settings_button = new Intent(CameraActivity.this, Settings_Page.class);
+        startActivity(settings_button); // brings up the next activity
+    }
+
+    @Override
+    public void onBackPressed() {
+        return;
+    }
 
   private void onSwitchCamClick() {
 

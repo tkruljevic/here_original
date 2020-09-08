@@ -26,5 +26,42 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="tamara.myappcompany.here.DetectorActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="tamara.myappcompany.here.CoursesGridFragment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="tamara.myappcompany.here.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="tamara.myappcompany.here.CoursesGridFragment">
+        </activity>
+        <activity android:name="tamara.myappcompany.here.CameraActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="tamara.myappcompany.here.Settings_Page"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="tamara.myappcompany.here.About_Page"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="tamara.myappcompany.here.TutorialPage"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <provider
+            android:authorities="tamara.myappcompany.here.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
     </application>
 </manifest>

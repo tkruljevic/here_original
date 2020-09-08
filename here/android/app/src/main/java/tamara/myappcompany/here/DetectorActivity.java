@@ -59,6 +59,7 @@ import tamara.myappcompany.here.env.Logger;
 import tamara.myappcompany.here.tflite.SimilarityClassifier;
 import tamara.myappcompany.here.tflite.TFLiteObjectDetectionAPIModel;
 import tamara.myappcompany.here.tracking.MultiBoxTracker;
+import tamara.myappcompany.here.CoursesGridFragment;
 import org.tensorflow.lite.examples.detection.R;
 
 /**
@@ -116,6 +117,8 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   //private Matrix cropToPortraitTransform;
 
   private MultiBoxTracker tracker;
+
+  private CoursesGridFragment course1;
 
   private BorderedText borderedText;
 
@@ -382,20 +385,28 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
     ImageView ivFace = dialogLayout.findViewById(org.tensorflow.lite.examples.detection.R.id.dlg_image);
     TextView tvTitle = dialogLayout.findViewById(org.tensorflow.lite.examples.detection.R.id.dlg_title);
     EditText etName = dialogLayout.findViewById(R.id.dlg_input);
+    EditText etNumber = dialogLayout.findViewById(R.id.dlg_input2);
 
-    tvTitle.setText("Add Face");
+    tvTitle.setText("New Student Entry");
     ivFace.setImageBitmap(rec.getCrop());
     etName.setHint("Input name");
+    etNumber.setHint("Input student number");
+    String student_name;
+    Bitmap student_img;
+
 
     builder.setPositiveButton("OK", new DialogInterface.OnClickListener(){
       @Override
       public void onClick(DialogInterface dlg, int i) {
 
           String name = etName.getText().toString();
+        String number = etNumber.getText().toString();
           if (name.isEmpty()) {
               return;
           }
           detector.register(name, rec);
+          addNewStudent(name,number);
+
           //knownFaces.put(name, rec);
           dlg.dismiss();
       }
@@ -403,6 +414,11 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
     builder.setView(dialogLayout);
     builder.show();
 
+  }
+
+  private void addNewStudent(String name, String number) {
+    course1 = new CoursesGridFragment();
+    course1.addStudent(new StudentRecyclerViewItem(name,number,R.drawable.c1_tom_holland));
   }
 
   private void updateResults(long currTimestamp, final List<SimilarityClassifier.Recognition> mappedRecognitions) {

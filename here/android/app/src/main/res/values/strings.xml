@@ -8,7 +8,10 @@
     <string name="hint_password">Password</string>
     <string name="button_login">Login</string>
     <string name="button_signup">Sign Up</string>
-    <string name="error_password">Password must contain at least 8 characters.</string>
+    <string name="error_password">Password is invalid.</string>
+    <string name="error_username">Username is invalid. </string>
+    <string name="error_password2">Password field cannot be empty.</string>
+    <string name="error_username2">Username field cannot be empty.</string>
 
     <!-- Menu Labels -->
     <string name="course1_label">Course 1</string>
@@ -20,5 +23,47 @@
 
     <!-- Folder icon on Menu -->
     <string name="folder_title">Folder</string>
+
+    <!-- Title for student attendance tracking -->
+    <string name="student_info_title1">Attendance By Day</string>
+    <string name="student_info_title2">Attendance Timeline</string>
+    <string name="student_info_subtitle1">Date</string>
+    <string name="student_info_subtitle2">Attended</string>
+    <string name="attendance_check">Yes</string>
+
+    <string name="course1_sublabel">The Avengers</string>
+
+    <string name="student_name">Robert Downey Jr</string>
+    <string name="student_number">Tony Stark</string>
+
+    <!-- Settings Labels -->
+    <string name="about_button">About</string>
+    <string name="tutorial_button">Tutorial</string>
+
+    <!-- About Page -->
+    <string name="about_subtext">Attendance Tracking App: Here!</string>
+    <string name="text_with_paragraph">
+        Here! was created by Tamara Kruljevic under the supervision of Jagath Samarabandu
+        as a research project towards a Masters of Engineering Degree at Western University.
+        The app is designed to track attendance of students in courses.
+    </string>
+
+    <!-- Tutorial Page -->
+    <string name="tutorial_subtext">App Functionality</string>
+    <string name="tut_step1">Step 1</string>
+    <string name="text_with_paragraph_tut1">
+        The button on the bottom to the right of the screen allows you to switch the camera direction.
+        From this page you select the plus(+) icon to add a new student which will prompt you for a name and student number.
+    </string>
+    <string name="tut_step2">Step 2</string>
+    <string name="text_with_paragraph_tut2">
+        Drop down menu in the top left corner will give you options to select a course.
+        Once a course is selected you will see a list of all the students. In the top right corner
+        of this page is the option to export the student attendance data.
+    </string>
+    <string name="tut_step3">Step 3</string>
+    <string name="text_with_paragraph_tut3">
+        Selecting on any student will take you to their personal profile page.
+    </string>
 
 </resources>

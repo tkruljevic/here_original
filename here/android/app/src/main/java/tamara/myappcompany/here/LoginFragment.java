@@ -1,5 +1,6 @@
 package tamara.myappcompany.here;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.KeyEvent;
@@ -38,11 +39,39 @@ public class LoginFragment extends Fragment {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!isPasswordValid(passwordEditText.getText())) {
+                if ((usernameEditText.getText().toString().equals("")) && (passwordEditText.getText().toString().equals(""))){
+                    usernameTextInput.setError(getString(R.string.error_username2));
+                    passwordTextInput.setError(getString(R.string.error_password2));
+                }
+                else if ((!(isUsernameValid(usernameEditText.getText()))) && (passwordEditText.getText().toString().equals(""))) {
+                    usernameTextInput.setError(getString(R.string.error_username));
+                    passwordTextInput.setError(getString(R.string.error_password2));
+                }
+                else if ((!(isPasswordValid(passwordEditText.getText()))) && (usernameEditText.getText().toString().equals(""))) {
                     passwordTextInput.setError(getString(R.string.error_password));
-                } else {
+                    usernameTextInput.setError(getString(R.string.error_username2));
+                }
+                else if ((!(isPasswordValid(passwordEditText.getText()))) && (isUsernameValid(usernameEditText.getText()))) {
+                    passwordTextInput.setError(getString(R.string.error_password));
+                    usernameTextInput.setError(null); // Clear the error
+                }
+                else if ((!(isUsernameValid(usernameEditText.getText()))) && (isPasswordValid(passwordEditText.getText()))) {
+                    usernameTextInput.setError(getString(R.string.error_username));
                     passwordTextInput.setError(null); // Clear the error
-                    ((NavigationHost) getActivity()).navigateTo(new DetectorActivity(), false); // Navigate to the next Fragment
+                }
+                else if ((!(isUsernameValid(usernameEditText.getText()))) && (!(isPasswordValid(passwordEditText.getText())))){
+                    usernameTextInput.setError(getString(R.string.error_username));
+                    passwordTextInput.setError(getString(R.string.error_password));
+                }
+                else{
+                    passwordTextInput.setError(null); // Clear the error
+                    usernameTextInput.setError(null); // Clear the error
+                    Intent i = new Intent(getActivity(), DetectorActivity.class);
+                    startActivity(i); // brings up the second activity
+                    getActivity().finish(); //stop users from being able to navigate to Login screen using back button
+
+                    //((CameraActivity) getActivity()).FragmentMethod();
+                    //((NavigationHost2) getActivity()).navigateTo(new AppCompatActivity() , false); // Navigate to the next Fragment
                 }
             }
         });
@@ -58,12 +87,27 @@ public class LoginFragment extends Fragment {
             }
         });
 
+        usernameEditText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View view, int i, KeyEvent keyEvent) {
+                if (isUsernameValid(usernameEditText.getText())){
+                    usernameTextInput.setError(null); // Clear the error
+                }
+                return false;
+            }
+        });
+
         return view;
+    }
+
+    // "isUsernameValid" from "Navigate to the next Fragment" section method goes here
+    private boolean isUsernameValid(@Nullable Editable text) {
+        return (text.toString().equals("admin"));
     }
 
     // "isPasswordValid" from "Navigate to the next Fragment" section method goes here
     private boolean isPasswordValid(@Nullable Editable text) {
-        return text != null && text.length() >= 8;
+        return (text.toString().equals("admin"));
     }
 
 }

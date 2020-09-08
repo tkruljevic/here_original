@@ -59,16 +59,19 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-06T12:16:48.374Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="tamara.myappcompany.here" />
-      <recent name="org.tensorflow.lite.examples.detection" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.tensorflow.lite" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tamar\AndroidStudioProjects\here_original\here\android\app\src\main\res\drawable" />
+      <recent name="C:\Users\tamar\AndroidStudioProjects\here_original\here\android\app\src\main\res" />
+      <recent name="C:\Users\tamar\AndroidStudioProjects\here_original\here\android\app\src\main\res\layout" />
+      <recent name="C:\Users\tamar\AndroidStudioProjects\here_original\here\android\app\src\main\java\tamara\myappcompany\here" />
+      <recent name="C:\Users\tamar\AndroidStudioProjects\here\here\android\app\src\main\res\drawable" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tamara.myappcompany.here.tracking" />
@@ -76,10 +79,9 @@
       <recent name="org.tensorflow.lite.examples.detection" />
       <recent name="org.tensorflow.lite.examples.detection.tracking" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tamar\AndroidStudioProjects\here\here\android\app\src\main\res\drawable" />
-      <recent name="C:\Users\tamar\AndroidStudioProjects\here\here\android\app\src\main\res\layout" />
-      <recent name="C:\Users\tamar\AndroidStudioProjects\here\here\android\app\src\main\res\drawable-xxhdpi" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tamara.myappcompany.here" />
+      <recent name="org.tensorflow.lite.examples.detection" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,6 +175,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="659" y="76" key="#Inspections" timestamp="1598897748027">
       <screen x="0" y="0" width="1536" height="824" />
@@ -198,10 +205,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="951" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1598964779598" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598960328013">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599578563787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598960328013" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599578563787" />
     <state x="608" y="177" key="AndroidCreateResourceFileDialog" timestamp="1599462837910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -210,6 +217,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="584" y="243" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1599273046821" />
+    <state x="398" y="8" key="CommitChangelistDialog2" timestamp="1599581308175">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="398" y="8" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599581308175" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1599220413166">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -226,22 +237,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="470" y="51" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599479778494" />
-    <state width="1491" height="93" key="GridCell.Tab.0.bottom" timestamp="1599568455247">
+    <state width="1491" height="168" key="GridCell.Tab.0.bottom" timestamp="1599581325449">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="93" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599568455247" />
-    <state width="1491" height="93" key="GridCell.Tab.0.center" timestamp="1599568455247">
+    <state width="1491" height="168" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599581325449" />
+    <state width="1491" height="168" key="GridCell.Tab.0.center" timestamp="1599581325449">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="93" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599568455247" />
-    <state width="1491" height="93" key="GridCell.Tab.0.left" timestamp="1599568455247">
+    <state width="1491" height="168" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599581325449" />
+    <state width="1491" height="168" key="GridCell.Tab.0.left" timestamp="1599581325448">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="93" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599568455247" />
-    <state width="1491" height="93" key="GridCell.Tab.0.right" timestamp="1599568455247">
+    <state width="1491" height="168" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599581325448" />
+    <state width="1491" height="168" key="GridCell.Tab.0.right" timestamp="1599581325449">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="93" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599568455247" />
+    <state width="1491" height="168" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599581325449" />
     <state width="1491" height="209" key="GridCell.Tab.1.bottom" timestamp="1599435335471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -258,18 +269,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1491" height="209" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599435335471" />
-    <state x="622" y="42" width="914" height="714" key="SettingsEditor" timestamp="1599479316542">
+    <state x="279" y="55" width="914" height="714" key="SettingsEditor" timestamp="1599581153204">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="622" y="42" width="914" height="714" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599479316542" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599477282274">
+    <state x="279" y="55" width="914" height="714" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1599581153204" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599581074755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599477282274" />
-    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1599305675387">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599581074755" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1599578551778">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1599305675387" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1599578551778" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599568691533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -282,10 +293,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1599565865957" />
-    <state x="397" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1599309189893">
+    <state x="397" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1599580974946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="397" y="216" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599309189893" />
+    <state x="397" y="216" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599580974946" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598969295181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

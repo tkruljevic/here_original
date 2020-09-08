@@ -7,7 +7,7 @@
                 android:width="25dp"
                 android:color="#54B0F3" />
             <solid
-                android:color="#999999" />
+                android:color="#E0E0E0" />
         </shape>
     </item>
 </layer-list>
