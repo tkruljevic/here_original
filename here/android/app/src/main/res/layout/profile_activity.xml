@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tamara.myappcompany.here.CoursesGridFragment">
+
+    <LinearLayout
+        style="@style/Widget.Here.Backdrop"
+        android:id="@+id/C1_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp">
+
+        <include layout="@layout/menu_backdrop" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/c1_container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="116dp"
+            android:text="@string/course1_label"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="22sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+        <TextView
+            android:id="@+id/label_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="116dp"
+            android:text="@string/course1_sublabel"
+            android:textColor="@color/floatingButton"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="16sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+        <ImageView
+            android:id="@+id/label_3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/c1_robert_downey"/>
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="25dp"
+            android:weightSum="100"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/layout_bg">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/floatingButton"
+                    android:text="@string/student_info_title1"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textSize="14sp" />
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/layout_bg"
+                        android:elevation="1dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                        <TableLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/attendance_table">
+
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary">
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/student_info_subtitle1"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:background="@color/textColorPrimary"
+                                    android:layout_margin="1dp"
+                                    android:textSize="14sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:autoSizeMinTextSize="10sp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeStepGranularity="2sp"
+                                    android:textColor="@color/floatingButton"/>
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:text="@string/student_info_subtitle2"
+                                    android:background="@color/textColorPrimary"
+                                    android:layout_margin="1dp"
+                                    android:textSize="14sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:autoSizeMinTextSize="10sp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeStepGranularity="2sp"
+                                    android:textColor="@color/floatingButton"/>
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorPrimary">
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/student_info_subtitle1"
+                                    android:padding="5dp"
+                                    android:background="@color/textColorPrimary"
+                                    android:layout_margin="1dp"
+                                    android:textSize="14sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:autoSizeMinTextSize="10sp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeStepGranularity="2sp"
+                                    android:textColor="@color/floatingButton"/>
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:text="@string/attendance_check"
+                                    android:background="@color/textColorPrimary"
+                                    android:layout_margin="1dp"
+                                    android:textSize="14sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:autoSizeMinTextSize="10sp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeStepGranularity="2sp"
+                                    android:textColor="@color/floatingButton"/>
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="50"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:background="@drawable/layout_bg">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="16dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginStart="5dp"-->
+<!--                    android:textColor="@color/floatingButton"-->
+<!--                    android:text="@string/student_info_title2"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:background="@drawable/layout_bg"-->
+<!--                    android:elevation="1dp">-->
+
+<!--                </LinearLayout>-->
+
+<!--            </RelativeLayout>-->
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Here.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/menu_image"
+            app:title="@string/app_name"
+            app:elevation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</FrameLayout>

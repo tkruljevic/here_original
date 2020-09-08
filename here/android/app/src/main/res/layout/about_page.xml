@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tamara.myappcompany.here.CoursesGridFragment">
+
+    <LinearLayout
+        style="@style/Widget.Here.Backdrop"
+        android:id="@+id/C1_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp">
+
+        <include layout="@layout/menu_backdrop" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/about_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="116dp"
+            android:text="@string/about_button"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="22sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/about_subtext"
+            android:textColor="@color/floatingButton"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="16sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/productGridBackgroundColor"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/layout_bg2"
+                android:alpha="0.4"
+                android:orientation="vertical">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginBottom="16dp"
+                            app:srcCompat="@drawable/logo_blue" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="50dp"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginBottom="10dp"
+                             android:text="@string/app_name"
+                             android:textAppearance="@style/TextAppearance.Here.Title" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:layout_marginBottom="16dp">
+
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="@string/text_with_paragraph"
+                            android:textColor="@color/cameraBackground"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+
+                    </ScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Here.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/menu_image"
+            app:title="@string/app_name"
+            app:elevation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</FrameLayout>

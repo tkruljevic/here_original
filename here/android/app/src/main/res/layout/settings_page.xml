@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tamara.myappcompany.here.CoursesGridFragment">
+
+    <LinearLayout
+        style="@style/Widget.Here.Backdrop"
+        android:id="@+id/C1_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp">
+
+        <include layout="@layout/menu_backdrop" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="116dp"
+            android:text="@string/settings_label"
+            android:textColor="@color/floatingButton"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="22sp"
+            android:autoSizeStepGranularity="2sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/productGridBackgroundColor"
+            android:paddingStart="@dimen/shr_product_grid_spacing"
+            android:paddingEnd="@dimen/shr_product_grid_spacing"
+            android:weightSum="8"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/about_button"
+                android:layout_marginTop="16dp"
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:text="@string/about_button"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tutorial_button"
+                android:layout_marginTop="16dp"
+                android:layout_height="80dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:text="@string/tutorial_button"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Here.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/menu_image"
+            app:title="@string/app_name"
+            app:elevation="0dp"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</FrameLayout>
